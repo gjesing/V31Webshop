@@ -1,5 +1,6 @@
-* {
+p, h1, h2, h3, h4, h5, h6, a, button, input, label {
   font-family: 'Roboto Condensed', sans-serif;
+  color: #777777;
 }
 
 body {
@@ -8,32 +9,62 @@ body {
 
 header {
   height: 250px;
-  padding-top: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: url("../img/header.jpeg");
 }
 
-header .logo div {
-  background: #ffeff2;
-  height: 90px;
-  width: 90px;
-  border-radius: 50px;
-  margin: 5px auto;
+header nav {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 20%;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: .9em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: #5e5e5e;
+}
+
+header .logo {
+  margin-top: 40px;
+}
+
+header .logo img {
+  width: 80px;
+  margin: 0 calc(50% - 40px);
+  display: block;
 }
 
 header .logo h1 {
-  color: #777777;
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin: 15px 0;
 }
 
-nav {
+body > nav {
   background: #ffeff2;
   padding: 0 20%;
 }
 
-nav ul {
+body > nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -42,19 +73,75 @@ nav ul {
   display: flex;
 }
 
-nav ul li:last-child {
+body > nav ul li:first-child a {
+  padding-left: 0;
+}
+
+body > nav ul li:last-child {
   margin-left: auto;
 }
 
-nav ul li a {
-  color: #777777;
+body > nav ul li:last-child a i {
+  padding-left: 10px;
+}
+
+body > nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px;
   display: block;
 }
 
-nav ul li a:hover {
+body > nav ul li a:hover {
   color: #5e5e5e;
+}
+
+main {
+  width: 60%;
+  margin: 70px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(25% - 50px))[4];
+      grid-template-columns: repeat(4, calc(25% - 50px));
+  grid-column-gap: 50px;
+  grid-row-gap: 100px;
+}
+
+main article {
+  position: relative;
+}
+
+main article img {
+  width: 100%;
+}
+
+main article h2 {
+  text-align: center;
+}
+
+main article h3 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+main article button {
+  background: #ffeff2;
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main article button:hover {
+  background: #ffd6dd;
+  cursor: pointer;
+}
+
+main article button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

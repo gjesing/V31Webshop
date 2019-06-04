@@ -1,32 +1,54 @@
 $mainColor: #ffeff2;
 $textColor: #777777;
-* {
+p, h1, h2, h3, h4, h5, h6, a, button, input, label {
     font-family: 'Roboto Condensed', sans-serif;
+    color: $textColor;
 }
 body {
     margin: 0;
 }
 header {
+    nav {
+        background: rgba(255, 255, 255, .8);
+        padding: 0 20%;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: .9em;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    display: block;
+                    &:hover {
+                        color: darken($textColor, 10);
+                    }
+                }
+            }
+        }
+    }
     height: 250px;
-    padding-top: 70px;
     box-sizing: border-box;
+    background: url("../img/header.jpeg");
     .logo {
-        div {
-            background: $mainColor;
-            height: 90px;
-            width: 90px;
-            border-radius: 50px;
-            margin: 5px auto;
+        margin-top: 40px;
+        img {
+            width: 80px;
+            margin: 0 calc(50% - 40px);
+            display: block;
         }
         h1 {
-            color: $textColor;
             font-family: 'Amatic SC', cursive;
             text-align: center;
             margin: 15px 0;
         }
     }
 }
-nav {
+body > nav {
     background: $mainColor;
     padding: 0 20%;
     ul {
@@ -35,11 +57,20 @@ nav {
         list-style: none;
         display: flex;
         li {
+            &:first-child {
+                a {
+                    padding-left: 0;
+                }
+            }
             &:last-child {
                 margin-left: auto;
+                a {
+                    i {
+                        padding-left: 10px;
+                    }
+                }
             }
             a {
-                color: $textColor;
                 text-decoration: none;
                 text-transform: uppercase;
                 padding: 20px;
@@ -47,6 +78,44 @@ nav {
                 &:hover {
                     color: darken($textColor, 10);
                 }
+            }
+        }
+    }
+}
+main {
+    width: 60%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 50px));
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    article {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        button {
+            background: $mainColor;
+            width: 100%;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.5em;
+            position: absolute;
+            bottom: 0;
+            transition: all .5s;
+            &:hover {
+                background: darken($mainColor, 5);
+                cursor: pointer;
+            }
+            &:focus {
+                outline: none;
             }
         }
     }
