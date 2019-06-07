@@ -44,7 +44,8 @@
                 <h2>Meow Cat Gel Pen</h2>
                 <p>Tilføjet 04-06-2019 af Maren Gjesing Laursen</p>
                 <p>What’s more adorable than a kitten? Not much! Which is why we love this collection of cute kitten topped gel pens. The perfect addition to your cute stationery collection. Each pen includes its own unique adorable face.</p>
-                <h3>20 kr.</h3>
+                <p><a href="#">Penne og blyanter</a></p>
+                <h3>19,95 kr.</h3>
                 <button>Læg i kurv</button>
             </article>
             <article>
@@ -52,7 +53,8 @@
                 <h2>Cats & Dogs Memo Pads</h2>
                 <p>Tilføjet 04-06-2019 af Maren Gjesing Laursen</p>
                 <p>Take home one of our adorable Cat or Dog memo pads. The cute Dog and Cat designs are perfect for leaving notes or add them to notebooks and bullet journals for a little dose of cute. Each pad includes 30 pages.</p>
-                <h3>20 kr.</h3>
+                <p><a href="#">Memo pads</a></p>
+                <h3>19,95 kr.</h3>
                 <button>Læg i kurv</button>
             </article>
             <article>
@@ -60,7 +62,8 @@
                 <h2>Mini Vitamin Shaped Highlighter Pens</h2>
                 <p>Tilføjet 04-06-2019 af Maren Gjesing Laursen</p>
                 <p>Chuck out your boring old highlighters, and welcome this cute little family of Vitamin shaped mini highlighter pens into your pencil case. Each pen has its own unique personality. The perfect size to pop into any bag and go.</p>
-                <h3>30 kr.</h3>
+                <p><a href="#">Penne og blyanter</a></p>
+                <h3>29,95 kr.</h3>
                 <button>Læg i kurv</button>
             </article>
             <article>
@@ -68,7 +71,8 @@
                 <h2>Milk Carton Pencil Case</h2>
                 <p>Tilføjet 04-06-2019 af Maren Gjesing Laursen</p>
                 <p>We love these novelty Milk Carton shaped pencil cases. Featuring cute and adorable characters that will be sure to brighten your day. The unique designs means there is plenty of space to store all your pens and pencils. Available in three lovable designs.</p>
-                <h3>40 kr.</h3>
+                <p><a href="#">Penalhuse</a></p>
+                <h3>39,95 kr.</h3>
                 <button>Læg i kurv</button>
             </article>
         </section>
