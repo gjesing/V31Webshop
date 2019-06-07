@@ -5,8 +5,8 @@
     $pass = "";
      
     try {
-        // MySQL database
-        $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+        $dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $ex) {
         echo "Fejl: " . $ex;
     }

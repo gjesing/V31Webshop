@@ -1,13 +1,13 @@
 <?php
-require_once "Connect_db.php";
+require_once "connect.php";
 
-$statement = $dbh->prepare("SELECT * FROM articles");
+$statement = $dbh->prepare("SELECT * FROM products");
 $statement->execute();
 
-while ($row = $statement->fetch()) {
+while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     ?>
     <article>
-        <img src="../img/<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
+        <img src="img/<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
         <h2><?php echo $row['name']; ?></h2>
         <p>Tilføjet <?php echo $row['creationTime']; ?> af <?php echo $row['authorId']; ?></p>
         <p><?php echo $row['description']; ?></p>
