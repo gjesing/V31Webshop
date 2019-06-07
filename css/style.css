@@ -98,7 +98,7 @@ body > nav ul li a:hover {
 
 main {
   width: 60%;
-  margin: auto;
+  margin: 90px auto;
 }
 
 main section {
@@ -118,6 +118,7 @@ main section:nth-child(2) h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
+  margin-bottom: -100px;
 }
 
 main section:nth-child(2) article {
@@ -134,6 +135,13 @@ main section:nth-child(2) article h2 {
 
 main section:nth-child(2) article p {
   text-align: center;
+}
+
+main section:nth-child(2) article p:first-of-type {
+  font-size: .8em;
+}
+
+main section:nth-child(2) article p:last-of-type {
   margin-bottom: 140px;
 }
 

@@ -84,7 +84,7 @@ body > nav {
 }
 main {
     width: 60%;
-    margin: auto;
+    margin: 90px auto;
     section {
         margin: 70px auto;
     }
@@ -95,6 +95,7 @@ main {
         grid-row-gap: 100px;
         h1 {
             grid-column: 1 / 5;
+            margin-bottom: -100px;
         }
         article {
             position: relative;
@@ -106,7 +107,12 @@ main {
             }
             p {
                 text-align: center;
-                margin-bottom: 140px;
+                &:first-of-type {
+                    font-size: .8em;
+                }
+                &:last-of-type {
+                    margin-bottom: 140px;
+                }
             }
             h3 {
                 text-align: center;
