@@ -107,6 +107,9 @@ main {
             }
             p {
                 text-align: center;
+                a:hover {
+                    text-decoration: none;
+                }
                 &:first-of-type {
                     font-size: .8em;
                 }
@@ -128,7 +131,7 @@ main {
                 font-size: 1.5em;
                 position: absolute;
                 bottom: 0;
-                transition: all .5s;
+                transition: background-color .5s;
                 &:hover {
                     background: darken($mainColor, 5);
                     cursor: pointer;

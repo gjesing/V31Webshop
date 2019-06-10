@@ -35,7 +35,7 @@
     <main>
         <section>
             <h1>Velkommen til Kawaii Stationery</h1>
-            <p>Her kan du købe alverdens kawaii stationery til billige priser. Alle produkter er importeret direkte fra Japan.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum sunt non porro deserunt, modi molestiae omnis iste eligendi, odit, explicabo unde rerum pariatur maiores eius amet et laudantium commodi!</p>
         </section>
         <section>
             <h1>Nye produkter</h1>

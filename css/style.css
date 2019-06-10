@@ -137,6 +137,10 @@ main section:nth-child(2) article p {
   text-align: center;
 }
 
+main section:nth-child(2) article p a:hover {
+  text-decoration: none;
+}
+
 main section:nth-child(2) article p:first-of-type {
   font-size: .8em;
 }
@@ -160,8 +164,8 @@ main section:nth-child(2) article button {
   font-size: 1.5em;
   position: absolute;
   bottom: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 main section:nth-child(2) article button:hover {
