@@ -40,7 +40,7 @@
         </section>
         <section>
             <h1>Nye produkter</h1>
-            <?php require "assets/getProducts.php" ?>
+            <?php require "assets/getNewProducts.php" ?>
         </section>
     </main>
 </body>
