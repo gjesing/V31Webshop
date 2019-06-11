@@ -36,7 +36,19 @@
     <main>
         <section>
             <h1>Tilføj produkt</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum sunt non porro deserunt, modi molestiae omnis iste eligendi, odit, explicabo unde rerum pariatur maiores eius amet et laudantium commodi!</p>
+            <form method="post">
+                <label for="name">Produktnavn</label>
+                <input type="text" name="name">
+                <label for="image">Billede</label>
+                <input type="text" name="image">
+                <label for="description">Produktbeskrivelse</label>
+                <textarea name="description"></textarea>
+                <label for="price">Pris</label>
+                <input type="number" name="price">
+                <label for="categoryId">Kategori</label>
+                <select name="categoryId"></select>
+                <input type="submit">
+            </form>
         </section>
         <section>
             <h1>Nye produkter</h1>
