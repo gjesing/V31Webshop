@@ -37,6 +37,11 @@
         </ul>
     </nav>
     <main>
+        <?php
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                
+            }
+        ?>
         <section>
             <h1>Tilføj produkt</h1>
             <form method="post" class="addProduct">
