@@ -1,6 +1,24 @@
-p, h1, h2, h3, h4, h5, h6, a, button, input, label {
+p, h1, h2, h3, h4, h5, h6, a, button, input, label, textarea, select {
   font-family: 'Roboto Condensed', sans-serif;
   color: #777777;
+}
+
+button, input[type="submit"] {
+  background: #ffeff2;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #ffd6dd;
+  cursor: pointer;
+}
+
+button:focus, input[type="submit"]:focus {
+  outline: none;
 }
 
 body {
@@ -105,6 +123,26 @@ main section {
   margin: 70px auto;
 }
 
+main section form.addProduct label {
+  display: block;
+  margin: 10px 0;
+}
+
+main section form.addProduct input, main section form.addProduct textarea, main section form.addProduct select {
+  display: block;
+  padding: 15px 25px;
+  font-size: 1em;
+  width: 50%;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section form.addProduct input[type="submit"] {
+  width: auto;
+  margin-top: 30px;
+}
+
 main section:nth-child(2) {
   display: -ms-grid;
   display: grid;
@@ -157,23 +195,8 @@ main section:nth-child(2) article h3 {
 }
 
 main section:nth-child(2) article button {
-  background: #ffeff2;
   width: 100%;
-  border: none;
-  padding: 15px 25px;
-  font-size: 1.5em;
   position: absolute;
   bottom: 0;
-  -webkit-transition: background-color .5s;
-  transition: background-color .5s;
-}
-
-main section:nth-child(2) article button:hover {
-  background: #ffd6dd;
-  cursor: pointer;
-}
-
-main section:nth-child(2) article button:focus {
-  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

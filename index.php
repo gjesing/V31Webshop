@@ -30,6 +30,7 @@
             <li><a href="index.php">Forside</a></li>
             <li><a href="products.php">Produkter</a></li>
             <li><a href="#">Om os</a></li>
+            <li><a href="#">Kontakt</a></li>
             <li><a href="#">Indkøbskurv<i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </nav>
