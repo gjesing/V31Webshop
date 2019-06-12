@@ -22,10 +22,10 @@
                 <li><a href="#">Opret bruger</a></li>
             </ul>
         </nav>
-        <div class="logo">
+        <a href="Index.php" class="logo">
             <img src="img/logo.png" alt="Logo">
             <h1>Kawaii Stationery</h1>
-        </div>
+        </a>
     </header>
     <nav>
         <ul>
@@ -37,14 +37,9 @@
         </ul>
     </nav>
     <main>
-        <?php
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                
-            }
-        ?>
         <section>
             <h1>Tilføj produkt</h1>
-            <form method="post" class="addProduct">
+            <form action="assets/createProduct.php" method="post" class="addProduct">
                 <label for="name">Produktnavn</label>
                 <input type="text" name="name" required>
                 <label for="image">Billede</label>
@@ -52,7 +47,7 @@
                 <label for="description">Produktbeskrivelse</label>
                 <textarea name="description" rows="7" required></textarea>
                 <label for="price">Pris</label>
-                <input type="number" name="price" required>
+                <input type="number" step="0.01" name="price" required>
                 <label for="categoryId">Kategori</label>
                 <select name="categoryId" required>
                     <?php require "assets/getProductCategories.php" ?>

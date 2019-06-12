@@ -50,6 +50,8 @@ header {
     background: url("../img/header.jpeg");
     .logo {
         margin-top: 40px;
+        display: block;
+        text-decoration: none;
         img {
             width: 80px;
             margin: 0 calc(50% - 40px);
@@ -113,6 +115,9 @@ main {
                 width: 50%;
                 margin-bottom: 20px;
                 box-sizing: border-box;
+            }
+            textarea {
+                padding: 25px;
             }
             input[type="submit"] {
                 width: auto;

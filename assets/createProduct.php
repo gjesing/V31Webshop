@@ -1,8 +1,22 @@
 <?php
-require "connect.php";
-
-$statement = $dbh->prepare("SELECT products.productId, products.name, products.description, products.image, products.price, products.creationTime, authors.firstName, authors.lastName, productCategories.name AS categoryName FROM products JOIN authors ON products.authorId=authors.authorId JOIN productCategories ON products.categoryId=productCategories.categoryId ORDER BY products.creationTime");
-$statement->execute();
-
-$dbh = null;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {            
+    require "connect.php";
+    try {
+        $statement = $dbh->prepare("INSERT INTO Products (name, description, price, image, categoryId, authorId) VALUES (:name, :description, :price, :image, :categoryId, 1)");
+        $statement->bindParam(':name', $_POST['name']);
+        $statement->bindParam(':description', $_POST['description']);
+        $statement->bindParam(':price', $_POST['price']);
+        $statement->bindParam(':image', $_POST['image']);
+        $statement->bindParam(':categoryId', $_POST['categoryId']);
+        $statement->execute();
+        header("location: ../products.php");
+    } catch (PDOException $e) {
+        echo "Fejl: $e";
+    }
+    
+    $dbh = null;
+}
+else {
+    header("location: ../index.php");
+}
 ?>

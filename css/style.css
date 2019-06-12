@@ -63,6 +63,8 @@ header nav ul li a:hover {
 
 header .logo {
   margin-top: 40px;
+  display: block;
+  text-decoration: none;
 }
 
 header .logo img {
@@ -136,6 +138,10 @@ main section form.addProduct input, main section form.addProduct textarea, main 
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+main section form.addProduct textarea {
+  padding: 25px;
 }
 
 main section form.addProduct input[type="submit"] {
