@@ -17,8 +17,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="login.php">Log ind</a></li>
+                <li><a href="login.php">FAQ</a></li>
+                <li><a href="#">Log ind</a></li>
                 <li><a href="#">Opret bruger</a></li>
             </ul>
         </nav>
@@ -37,28 +37,14 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h1>Tilføj produkt</h1>
-            <form action="assets/createProduct.php" method="post" class="addProduct">
-                <label for="name">Produktnavn</label>
-                <input type="text" name="name" required>
-                <label for="image">Billede</label>
-                <input type="text" name="image">
-                <label for="description">Produktbeskrivelse</label>
-                <textarea name="description" rows="7" required></textarea>
-                <label for="price">Pris</label>
-                <input type="number" step="0.01" name="price" required>
-                <label for="categoryId">Kategori</label>
-                <select name="categoryId" required>
-                    <?php require "assets/getProductCategories.php" ?>
-                </select>
-                <input type="submit" value="Tilføj">
-            </form>
-        </section>
-        <section>
-            <h1>Nye produkter</h1>
-            <?php require "assets/getProducts.php" ?>
-        </section>
+        <h2>Log ind</h2>
+        <form action="assets/login.php" class="login">
+            <label for="username">Brugernavn</label>
+            <input type="text" name="username">
+            <label for="password">Adgangskode</label>
+            <input type="password" name="password">
+            <input type="submit" value="Log ind">
+        </form>
     </main>
 </body>
 

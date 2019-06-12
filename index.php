@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#">Log ind</a></li>
+                <li><a href="login.php">Log ind</a></li>
                 <li><a href="#">Opret bruger</a></li>
             </ul>
         </nav>

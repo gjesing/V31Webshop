@@ -3,6 +3,30 @@ p, h1, h2, h3, h4, h5, h6, a, button, input, label, textarea, select {
   color: #777777;
 }
 
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+form input, form textarea, form select {
+  display: block;
+  padding: 15px 25px;
+  font-size: 1em;
+  width: 50%;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form textarea {
+  padding: 25px;
+}
+
+form input[type="submit"] {
+  width: auto;
+  margin-top: 30px;
+}
+
 button, input[type="submit"] {
   background: #ffeff2;
   border: none;
@@ -123,30 +147,6 @@ main {
 
 main section {
   margin: 70px auto;
-}
-
-main section form.addProduct label {
-  display: block;
-  margin: 10px 0;
-}
-
-main section form.addProduct input, main section form.addProduct textarea, main section form.addProduct select {
-  display: block;
-  padding: 15px 25px;
-  font-size: 1em;
-  width: 50%;
-  margin-bottom: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-main section form.addProduct textarea {
-  padding: 25px;
-}
-
-main section form.addProduct input[type="submit"] {
-  width: auto;
-  margin-top: 30px;
 }
 
 main section:nth-child(2) {
