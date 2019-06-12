@@ -1,7 +1,7 @@
 <?php
 require "connect.php";
 
-$statement = $dbh->prepare("SELECT products.productId, products.name, products.description, products.image, products.price, products.creationTime, authors.firstName, authors.lastName, productCategories.name AS categoryName FROM products JOIN authors ON products.authorId=authors.authorId JOIN productCategories ON products.categoryId=productCategories.categoryId ORDER BY products.creationTime");
+$statement = $dbh->prepare("SELECT products.productId, products.name, products.description, products.image, products.price, products.creationTime, users.firstName, users.lastName, productCategories.name AS categoryName FROM products JOIN Users ON Products.userId=Users.userId JOIN ProductCategories ON Products.categoryId=ProductCategories.categoryId ORDER BY products.creationTime");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
