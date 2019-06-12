@@ -50,6 +50,7 @@
                 <input type="number" step="0.01" name="price" required>
                 <label for="categoryId">Kategori</label>
                 <select name="categoryId" required>
+                    <option value="" disabled selected>Vælg kategori</option>
                     <?php require "assets/getProductCategories.php" ?>
                 </select>
                 <input type="submit" value="Tilføj">

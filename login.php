@@ -40,9 +40,9 @@
         <h2>Log ind</h2>
         <form action="assets/login.php" class="login">
             <label for="username">Brugernavn</label>
-            <input type="text" name="username">
+            <input type="text" name="username" required>
             <label for="password">Adgangskode</label>
-            <input type="password" name="password">
+            <input type="password" name="password" required>
             <input type="submit" value="Log ind">
         </form>
     </main>
