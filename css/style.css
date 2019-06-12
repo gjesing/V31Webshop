@@ -1,4 +1,16 @@
-p, h1, h2, h3, h4, h5, h6, a, button, input, label, textarea, select {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+input,
+label,
+textarea,
+select {
   font-family: 'Roboto Condensed', sans-serif;
   color: #777777;
 }
@@ -8,7 +20,9 @@ form label {
   margin: 10px 0;
 }
 
-form input, form textarea, form select {
+form input,
+form textarea,
+form select {
   display: block;
   padding: 15px 25px;
   font-size: 1em;
@@ -27,7 +41,8 @@ form input[type="submit"] {
   margin-top: 30px;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   background: #ffeff2;
   border: none;
   padding: 15px 25px;
@@ -35,17 +50,23 @@ button, input[type="submit"] {
   transition: background-color .5s;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background: #ffd6dd;
   cursor: pointer;
 }
 
-button:focus, input[type="submit"]:focus {
+button:focus,
+input[type="submit"]:focus {
   outline: none;
 }
 
 button {
   font-size: 1.5em;
+}
+
+input[type="submit"] {
+  font-size: 1.2em;
 }
 
 body {
