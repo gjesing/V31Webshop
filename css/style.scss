@@ -29,7 +29,6 @@ button, input[type="submit"] {
     background: $mainColor;
     border: none;
     padding: 15px 25px;
-    font-size: 1.5em;
     transition: background-color .5s;
     &:hover {
         background: darken($mainColor, 5);
@@ -38,6 +37,9 @@ button, input[type="submit"] {
     &:focus {
         outline: none;
     }
+}
+button {
+    font-size: 1.5em;
 }
 body {
     margin: 0;
