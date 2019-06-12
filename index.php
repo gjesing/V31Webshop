@@ -18,8 +18,15 @@
         <nav>
             <ul>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="login.php">Log ind</a></li>
-                <li><a href="#">Opret bruger</a></li>
+                <?php
+                if (isset($_SESSION['username'])) {
+                    echo '<li><a href="#">Min konto</a></li>';
+                    echo '<li><a href="#">Log ud</a></li>';
+                } else {
+                    echo '<li><a href="login.php">Log ind</a></li>';
+                    echo '<li><a href="#">Opret bruger</a></li>';
+                }
+                ?>
             </ul>
         </nav>
         <a href="Index.php" class="logo">

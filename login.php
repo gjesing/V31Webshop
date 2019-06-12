@@ -17,8 +17,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="login.php">FAQ</a></li>
-                <li><a href="#">Log ind</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="login.php">Log ind</a></li>
                 <li><a href="#">Opret bruger</a></li>
             </ul>
         </nav>
@@ -38,11 +38,16 @@
     </nav>
     <main>
         <h2>Log ind</h2>
-        <form action="assets/login.php" class="login">
+        <form action="assets/login.php" method="post" class="login">
             <label for="username">Brugernavn</label>
             <input type="text" name="username" required>
             <label for="password">Adgangskode</label>
             <input type="password" name="password" required>
+            <?php
+            if (session_status() == PHP_SESSION_ACTIVE) {
+                echo '<p class="errorMsg">'.$_SESSION['errorMsg'].'</p>';
+            }
+            ?>
             <input type="submit" value="Log ind">
         </form>
     </main>
