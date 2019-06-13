@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +22,7 @@
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <?php
-                if (isset($_SESSION['username'])) {
+                if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
                     echo '<li><a href="#">Min konto</a></li>';
                     echo '<li><a href="#">Log ud</a></li>';
                 } else {

@@ -1,5 +1,6 @@
 $mainColor: #ffeff2;
 $textColor: #777777;
+$errorColor: #ff0000;
 
 p,
 h1,
@@ -18,10 +19,17 @@ select {
     color: $textColor;
 }
 
+p.errorMsg {
+    color: $errorColor;
+}
+
 form {
     label {
         display: block;
         margin: 10px 0;
+        &.wrongInput {
+            color: $errorColor;
+        }
     }
 
     input,
@@ -33,6 +41,9 @@ form {
         width: 50%;
         margin-bottom: 20px;
         box-sizing: border-box;
+        &.wrongInput {
+            border: 1px solid $errorColor;
+        }
     }
 
     textarea {

@@ -15,9 +15,17 @@ select {
   color: #777777;
 }
 
+p.errorMsg {
+  color: #ff0000;
+}
+
 form label {
   display: block;
   margin: 10px 0;
+}
+
+form label.wrongInput {
+  color: #ff0000;
 }
 
 form input,
@@ -30,6 +38,12 @@ form select {
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+form input.wrongInput,
+form textarea.wrongInput,
+form select.wrongInput {
+  border: 1px solid #ff0000;
 }
 
 form textarea {

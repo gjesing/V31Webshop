@@ -6,13 +6,15 @@ $statement->bindparam(1, $_POST['username']);
 $statement->bindparam(2, $_POST['password']);
 $statement->execute();
 
-session_reset();
 session_start();
 
-if (empty($row = $statement->fetch())) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && empty($row = $statement->fetch())) {
+    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['password'] = $_POST['password'];
     $_SESSION['errorMsg'] = "Forkert brugernavn eller adgangskode";
     header("location: ../login.php");
 } else {
+    $_SESSION['loggedIn'] = true;
     $_SESSION['userId'] = $row['userId'];
     $_SESSION['firstName'] = $row['firstName'];
     $_SESSION['lastName'] = $row['lastName'];
@@ -21,4 +23,6 @@ if (empty($row = $statement->fetch())) {
     $_SESSION['accessLevel'] = $row['accessLevel'];
     header("location: ../index.php");
 }
+
+$dbh = null;
 ?>

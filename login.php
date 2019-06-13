@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,13 +42,16 @@
     <main>
         <h2>Log ind</h2>
         <form action="assets/login.php" method="post" class="login">
-            <label for="username">Brugernavn</label>
-            <input type="text" name="username" required>
-            <label for="password">Adgangskode</label>
-            <input type="password" name="password" required>
+            <label for="username" <?php echo (isset($_SESSION['username'])) ? 'class="wrongInput"' : '' ; ?>>Brugernavn</label>
+            <input type="text" name="username" <?php echo (isset($_SESSION['username'])) ? 'value="'.$_SESSION['username'].'" class="wrongInput"' : '' ; ?> required>
+            <label for="password" <?php echo (isset($_SESSION['password'])) ? 'class="wrongInput"' : '' ; ?>>Adgangskode</label>
+            <input type="password" name="password" <?php echo (isset($_SESSION['password'])) ? 'value="'.$_SESSION['password'].'" class="wrongInput"' : '' ; ?> required>
             <?php
-            if (session_status() == PHP_SESSION_ACTIVE) {
+            if (isset($_SESSION['errorMsg'])) {
                 echo '<p class="errorMsg">'.$_SESSION['errorMsg'].'</p>';
+                unset($_SESSION['username']);
+                unset($_SESSION['password']);
+                unset($_SESSION['errorMsg']);
             }
             ?>
             <input type="submit" value="Log ind">
