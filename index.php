@@ -24,7 +24,7 @@ session_start();
                 <?php
                 if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
                     echo '<li><a href="#">Min konto</a></li>';
-                    echo '<li><a href="#">Log ud</a></li>';
+                    echo '<li><a href="assets/logout.php">Log ud</a></li>';
                 } else {
                     echo '<li><a href="login.php">Log ind</a></li>';
                     echo '<li><a href="#">Opret bruger</a></li>';
