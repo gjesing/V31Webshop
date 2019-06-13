@@ -10,7 +10,6 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && empty($row = $statement->fetch())) {
     $_SESSION['username'] = $_POST['username'];
-    $_SESSION['password'] = $_POST['password'];
     $_SESSION['errorMsg'] = "Forkert brugernavn eller adgangskode";
     header("location: ../login.php");
 } else {

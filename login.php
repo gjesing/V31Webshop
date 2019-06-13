@@ -44,8 +44,8 @@ session_start();
         <form action="assets/login.php" method="post" class="login">
             <label for="username" <?php echo (isset($_SESSION['username'])) ? 'class="wrongInput"' : '' ; ?>>Brugernavn</label>
             <input type="text" name="username" <?php echo (isset($_SESSION['username'])) ? 'value="'.$_SESSION['username'].'" class="wrongInput"' : 'autofocus' ; ?> required >
-            <label for="password" <?php echo (isset($_SESSION['password'])) ? 'class="wrongInput"' : '' ; ?>>Adgangskode</label>
-            <input type="password" name="password" <?php echo (isset($_SESSION['password'])) ? 'value="'.$_SESSION['password'].'" class="wrongInput"' : '' ; ?> required>
+            <label for="password" <?php echo (isset($_SESSION['username'])) ? 'class="wrongInput"' : '' ; ?>>Adgangskode</label>
+            <input type="password" name="password" <?php echo (isset($_SESSION['username'])) ? 'class="wrongInput" autofocus' : '' ; ?> required>
             <?php
             if (isset($_SESSION['errorMsg'])) {
                 echo '<p class="errorMsg">'.$_SESSION['errorMsg'].'</p>';
