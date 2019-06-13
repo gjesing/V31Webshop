@@ -43,7 +43,7 @@ session_start();
         <h2>Log ind</h2>
         <form action="assets/login.php" method="post" class="login">
             <label for="username" <?php echo (isset($_SESSION['username'])) ? 'class="wrongInput"' : '' ; ?>>Brugernavn</label>
-            <input type="text" name="username" <?php echo (isset($_SESSION['username'])) ? 'value="'.$_SESSION['username'].'" class="wrongInput"' : '' ; ?> required>
+            <input type="text" name="username" <?php echo (isset($_SESSION['username'])) ? 'value="'.$_SESSION['username'].'" class="wrongInput"' : 'autofocus' ; ?> required >
             <label for="password" <?php echo (isset($_SESSION['password'])) ? 'class="wrongInput"' : '' ; ?>>Adgangskode</label>
             <input type="password" name="password" <?php echo (isset($_SESSION['password'])) ? 'value="'.$_SESSION['password'].'" class="wrongInput"' : '' ; ?> required>
             <?php

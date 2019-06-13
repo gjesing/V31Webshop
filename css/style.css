@@ -46,6 +46,12 @@ form select.wrongInput {
   border: 1px solid #ff0000;
 }
 
+form input.wrongInput:focus,
+form textarea.wrongInput:focus,
+form select.wrongInput:focus {
+  outline-color: #ff0000;
+}
+
 form textarea {
   padding: 25px;
 }
