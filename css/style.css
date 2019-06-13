@@ -187,7 +187,7 @@ main section {
   margin: 70px auto;
 }
 
-main section:nth-child(2) {
+main section.products {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (calc(25% - 50px))[4];
@@ -196,49 +196,49 @@ main section:nth-child(2) {
   grid-row-gap: 100px;
 }
 
-main section:nth-child(2) h1 {
+main section.products h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
   margin-bottom: -100px;
 }
 
-main section:nth-child(2) article {
+main section.products article {
   position: relative;
 }
 
-main section:nth-child(2) article img {
+main section.products article img {
   width: 100%;
 }
 
-main section:nth-child(2) article h2 {
+main section.products article h2 {
   text-align: center;
 }
 
-main section:nth-child(2) article p {
+main section.products article p {
   text-align: center;
 }
 
-main section:nth-child(2) article p a:hover {
+main section.products article p a:hover {
   text-decoration: none;
 }
 
-main section:nth-child(2) article p:first-of-type {
+main section.products article p:first-of-type {
   font-size: .8em;
 }
 
-main section:nth-child(2) article p:last-of-type {
+main section.products article p:last-of-type {
   margin-bottom: 140px;
 }
 
-main section:nth-child(2) article h3 {
+main section.products article h3 {
   text-align: center;
   position: absolute;
   bottom: 70px;
   width: 100%;
 }
 
-main section:nth-child(2) article button {
+main section.products article button {
   width: 100%;
   position: absolute;
   bottom: 0;

@@ -51,7 +51,7 @@ session_start();
             <h1>Velkommen til Kawaii Stationery</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum sunt non porro deserunt, modi molestiae omnis iste eligendi, odit, explicabo unde rerum pariatur maiores eius amet et laudantium commodi!</p>
         </section>
-        <section>
+        <section  class="products">
             <h1>Nye produkter</h1>
             <?php require "assets/getNewProducts.php" ?>
         </section>
