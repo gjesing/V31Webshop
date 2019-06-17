@@ -2,7 +2,7 @@
 $title = "Produkter";
 include "header.php";
 
-if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
+if (isset($_SESSION['accessLevel']) && $_SESSION['accessLevel'] > 1) {
     ?>
     <section>
         <h1>Tilføj produkt</h1>
