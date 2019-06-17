@@ -1,4 +1,8 @@
 <?php
+if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
+    header("location: " . $_SESSION['previousPage']);
+}
+
 $title = "Log ind";
 include "header.php";
 ?>

@@ -39,5 +39,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $dbh = null;
 } else {
-    header("location: ../index.php");
+    header("location: ../" . $_SESSION['previousPage']);;
 }

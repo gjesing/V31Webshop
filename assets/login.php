@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require "connect.php";
     
@@ -7,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $statement->bindparam(2, $_POST['password']);
     $statement->execute();
     
-    session_start();
     
     if (empty($row = $statement->fetch())) {
         $_SESSION['username'] = $_POST['username'];
@@ -26,6 +26,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $dbh = null;
 } else {
-    header("location: ../index.php");
+    header("location: ../" . $_SESSION['previousPage']);
 }
-?>
