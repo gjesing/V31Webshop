@@ -1,5 +1,9 @@
 <?php
 session_start();
+$_SESSION['currentPage'] = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1);
+if (!isset($_SESSION['previousPage']) || substr($_SERVER['HTTP_REFERER'], strrpos($_SERVER['HTTP_REFERER'], '/') + 1) != $_SESSION['currentPage']) {
+    $_SESSION['previousPage'] = substr($_SERVER['HTTP_REFERER'], strrpos($_SERVER['HTTP_REFERER'], '/') + 1);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
