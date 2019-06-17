@@ -10,7 +10,8 @@ button,
 input,
 label,
 textarea,
-select {
+select,
+i {
   font-family: 'Roboto Condensed', sans-serif;
   color: #777777;
 }
@@ -62,8 +63,7 @@ form input[type="submit"] {
 }
 
 button,
-input[type="submit"],
-a.delete {
+input[type="submit"] {
   background: #ffeff2;
   border: none;
   padding: 15px 25px;
@@ -72,15 +72,13 @@ a.delete {
 }
 
 button:hover,
-input[type="submit"]:hover,
-a.delete:hover {
+input[type="submit"]:hover {
   background: #ffd6dd;
   cursor: pointer;
 }
 
 button:focus,
-input[type="submit"]:focus,
-a.delete:focus {
+input[type="submit"]:focus {
   outline: none;
 }
 
@@ -257,16 +255,19 @@ main section.products article button.addToCart {
   bottom: 0;
 }
 
-main section.products article a.delete {
+main section.products article form.delete button {
   position: absolute;
   top: -15px;
   right: -15px;
-  width: 1.2em;
-  height: 1.2em;
-  padding: 10px;
+  width: 20%;
+  height: 0;
+  padding: 0;
+  padding-top: 3%;
+  padding-bottom: 17%;
   border-radius: 50px;
-  font-size: 1.2em;
-  text-align: center;
-  display: block;
+}
+
+main section.products article form.delete button i {
+  font-size: .8em;
 }
 /*# sourceMappingURL=style.css.map */

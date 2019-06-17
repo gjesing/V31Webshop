@@ -14,7 +14,8 @@ button,
 input,
 label,
 textarea,
-select {
+select,
+i {
     font-family: 'Roboto Condensed', sans-serif;
     color: $textColor;
 }
@@ -63,8 +64,7 @@ form {
 }
 
 button,
-input[type="submit"],
-a.delete {
+input[type="submit"] {
     background: $mainColor;
     border: none;
     padding: 15px 25px;
@@ -245,17 +245,23 @@ main {
                 bottom: 0;
             }
 
-            a.delete {
-                position: absolute;
-                top: -15px;
-                right: -15px;
-                width: 1.2em;
-                height: 1.2em;
-                padding: 10px;
-                border-radius: 50px;
-                font-size: 1.2em;
-                text-align: center;
-                display: block;
+            form.delete {
+                
+                button {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 20%;
+                    height: 0;
+                    padding: 0;
+                    padding-top: 3%;
+                    padding-bottom: 17%;
+                    border-radius: 50px;
+
+                    i {
+                        font-size: .8em;
+                    }
+                }
             }
         }
     }
