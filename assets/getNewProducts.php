@@ -13,7 +13,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         <p><?php echo $row['description']; ?></p>
         <p><a href="#"><?php echo $row['categoryName']; ?></a></p>
         <h3><?php echo $row['price']; ?> kr.</h3>
-        <button>Læg i kurv</button>
+        <button class="addToCart">Læg i kurv</button>
     </article>
 <?php
 }

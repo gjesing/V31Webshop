@@ -45,6 +45,7 @@ form {
 
         &.wrongInput {
             border: 1px solid $errorColor;
+
             &:focus {
                 outline-color: $errorColor;
             }
@@ -62,7 +63,8 @@ form {
 }
 
 button,
-input[type="submit"] {
+input[type="submit"],
+a.delete {
     background: $mainColor;
     border: none;
     padding: 15px 25px;
@@ -237,10 +239,23 @@ main {
                 width: 100%;
             }
 
-            button {
+            button.addToCart {
                 width: 100%;
                 position: absolute;
                 bottom: 0;
+            }
+
+            a.delete {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                width: 1.2em;
+                height: 1.2em;
+                padding: 10px;
+                border-radius: 50px;
+                font-size: 1.2em;
+                text-align: center;
+                display: block;
             }
         }
     }
