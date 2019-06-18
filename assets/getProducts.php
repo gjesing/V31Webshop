@@ -14,12 +14,18 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         <p><a href="#"><?php echo $row['categoryName']; ?></a></p>
         <h3><?php echo $row['price']; ?> kr.</h3>
         <button class="addToCart">Læg i kurv</button>
-        <form action="assets/deleteProduct.php" method="post" class="delete">
-            <input type="hidden" name="productId" value="<?php echo $row['productId']; ?>">
-            <button >
-                <i class="fas fa-trash-alt"></i>
-            </button>
-        </form>
+        <?php
+        if ((isset($_SESSION['accessLevel']) && $_SESSION['accessLevel'] == 3) || (isset($_SESSION['accessLevel']) && $_SESSION['accessLevel'] == 2 && $row['userId'] == $_SESSION['userId'])) {
+            ?>
+            <form action="assets/deleteProduct.php" method="post" class="delete">
+                <input type="hidden" name="productId" value="<?php echo $row['productId']; ?>">
+                <button>
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </form>
+        <?php
+    }
+    ?>
     </article>
 <?php
 }
