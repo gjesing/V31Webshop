@@ -16,7 +16,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Her kan du købe alverdens kawaii stationery til billige priser. Alle produkter er importeret direkte fra Japan.">
     <title><?php echo $title; ?> | Kawaii Stationery</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo2.png">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -39,7 +39,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
             </ul>
         </nav>
         <a href="Index.php" class="logo">
-            <img src="img/logo.png" alt="Logo">
+            <img src="img/logo2.png" alt="Logo">
             <h1>Kawaii Stationery</h1>
         </a>
     </header>
